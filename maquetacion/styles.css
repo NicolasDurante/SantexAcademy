@@ -1,31 +1,34 @@
-
-
-
 html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 
+div#navbar-left img {
+    width: 142px;
+    height: 40px;
+}
+#navbar-right img {
+    width: 14px;
+
+  }
 p {
-    margin-right: 2em;
+    padding-right: 35px;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 500;
 }
 
 button {
     background-color: white;
     border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
+    padding: 9px 20px;
+ 
     border: 2px solid black;
     font-size: 0.8em;
-    width: 8em;
+ 
 }
 
-div#navbar-left img {
-    width: 8em;
-}
+
 
 @media (width >= 2500px) {
     html {
