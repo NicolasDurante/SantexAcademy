@@ -1,43 +1,262 @@
 html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
-div#navbar-left img {
-    width: 142px;
-    height: 40px;
+body {
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 0px 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 80px;
+}
+#navbar-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#navbar-left img {
+  width: 142px;
+  height: 40px;
 }
 #navbar-right img {
-    width: 14px;
-
-  }
-p {
-    padding-right: 35px;
-    font-weight: bold;
-    font-size: 0.8em;
-    font-weight: 500;
+  width: 14px;
+  padding-left: 35px;
+  padding-right: 20px;
+}
+#navbar-right p {
+  padding-right: 35px;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 9px 20px;
- 
-    border: 2px solid black;
-    font-size: 0.8em;
- 
+  background-color: white;
+  border-radius: 30px;
+  padding: 9px 20px;
+
+  border: 2px solid black;
+  font-size: 0.8em;
 }
 
+#mensaje {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+  padding-left: 218px;
+  padding-right: 218px;
+}
+#mensaje p {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+}
+#mensaje button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+#impacto {
+  background-color: #201b24;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  color: white;
+}
+#impacto > div {
+  padding-left: 138px;
+  padding-right: 138px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+#impacto > div > #impacto-right {
+  display: flex;
+  align-items: flex-end;
+}
+#impacto > div > #impacto-right > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#foto {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(imagenes/twp-home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  border-color: var(--awb-color3);
+  border-style: solid;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 80px);
+}
+
+#programas {
+  padding-top: 60px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+#programas > div {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#programas > div > div {
+  width: 50%;
+  height: 300px;
+}
+#programas > div > div > img {
+  border-radius: 0 40px 40px 40px;
+  width: 100%;
+  height: 100%;
+}
+#programas > div > div > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#capacitacione {
+  padding-top: 60px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+#capacitaciones > div {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#capacitaciones > div > div {
+  width: 50%;
+  height: 300px;
+}
+#capacitaciones > div > div > img {
+  border-radius: 0 40px 40px 40px;
+  width: 100%;
+  height: 100%;
+}
+#capacitaciones > div > div > div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#equipo {
+  padding-top: 60px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  background-color: #f4f4f5;
+}
+#equipo > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#equipo > div > div {
+  flex: 0 0 18%;
+  max-width: 18%;
+  padding-right: 20px;
+}
+#equipo > div > div > .equipodescrip {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 0px 0px 15px 0px;
+  text-align: center;
+}
+#equipo > div > div > .equipodescrip > p {
+  font-size: 18px;
+}
+#equipo > div > div > .equipodescrip > h4 {
+  color: #8c939c;
+  font-size: 14px;
+}
+#equipo > div > div > div > .equipofoto {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+#alianzas {
+  padding-top: 60px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  background-color: white;
+}
+#alianzas > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#alianzas > div > div > img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%) opacity(0.5);
+}
+
+#footer {
+  padding-top: 60px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  background-color: #201b24;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: flex-start;
+}
 
 @media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
+  html {
+    font-size: 28px;
+  }
 }
 
 @media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
+  html {
+    font-size: 32px;
+  }
 }
